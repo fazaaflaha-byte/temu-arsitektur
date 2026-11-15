@@ -1,0 +1,9 @@
+{
+  "name": "tech-stack-flow-diagram",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Server Node.js untuk Tech Stack Flow Diagram",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
