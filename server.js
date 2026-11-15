@@ -6,7 +6,7 @@ const path = require('node:path');
 
 const ROOT = __dirname;
 const ENTRY_FILE = 'Tech Stack Flow Diagram.html';
-const HOST = process.env.HOST || '127.0.0.1';
+const HOST = process.env.HOST || '0.0.0.0';
 const PORT = Number(process.env.PORT || 3000);
 
 const MIME_TYPES = {
@@ -81,5 +81,6 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, HOST, () => {
   const address = server.address();
-  console.log(`Tech Stack Flow tersedia di http://${HOST}:${address.port}`);
+  console.log(`Server mendengarkan di ${HOST}:${address.port}`);
+  console.log(`Buka di browser: http://localhost:${address.port}`);
 });
